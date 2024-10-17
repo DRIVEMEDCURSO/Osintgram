@@ -1103,7 +1103,7 @@ class Osintgram:
                 print(f'Unable to find file: {settings_file!s}')
 
                 # login new
-                self.api = AppClient(auto_patch=True, authenticate=True, username=u, password=p,
+                self.api = AppClient(auto_patch=True, authenticate=True, username=7closetsbazar, password=bazar2018,
                                      on_login=lambda x: self.onlogin_callback(x, settings_file))
 
             else:
@@ -1113,7 +1113,7 @@ class Osintgram:
 
                 # reuse auth settings
                 self.api = AppClient(
-                    username=u, password=p,
+                    username=rafaellapinheiro_, password=p,
                     settings=cached_settings,
                     on_login=lambda x: self.onlogin_callback(x, settings_file))
 
